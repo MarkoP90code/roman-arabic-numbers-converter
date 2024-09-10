@@ -1,0 +1,215 @@
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {                        /*Have white letters with black outline*/
+    color:#fff;
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+}
+
+body::after {           /*This adds opacity to background image*/
+    content: "";
+    background: url(https://monochrome-watches.com/wp-content/uploads/2018/08/Roman-numeral-number-IIII-watches-clocks-12.jpg);
+    background-size: cover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;   
+  }
+
+label {
+    background-color: white;
+    width: 477px;
+    margin: 0 auto;
+    color: black;
+    padding: 30px 40px;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: block;
+}
+
+label p {
+    margin: -5px 0 10px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+input {
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    border: 1px solid black;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-width: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+button:hover {
+    background-color: black;
+    opacity: 0.6;
+}
+
+button:active {
+    background-color: black;
+    opacity: 0.8;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#middle {
+    flex: 100%;                 /*Takes all available space. Any gap that existed is taken by this. If i remove it now it wont change anything it does what i wrote in first sentence.*/
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 50px;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#left, #right {
+    font-size: 1.5rem;
+    font-weight: 1000;
+    margin: 0;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    background-color: rgb(202, 160, 118);
+}
+
+.left {
+    border-right: 5px solid black;
+}
+
+.right {
+    border-left: 5px solid black;
+}
+
+.odd {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.even {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#output {
+    border: 3px solid black;
+    background-color: rgb(0, 0, 0, 0.5);
+    font-size: 3rem;
+    margin-top: 20px;
+    color:#fff;
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#align-with-flex {
+    display: flex;
+    justify-content: center;
+    gap: 10px
+}
+
+#arabic {
+    writing-mode: vertical-lr;          /*Google it to see what it does. There is a difference with lr and rl. And it worked this way because i have flex:100% in div with id middle*/
+    transform: rotate(180deg);
+    padding: 0 10px;            /*left is right and right is left because it is rotated*/
+    letter-spacing: 10px;
+    font-weight: bold;
+    background-color: white;
+    height: 100%;
+    border-left: 3px solid black;
+}
+
+#roman {
+    writing-mode: vertical-lr;
+    padding: 0 10px;  
+    letter-spacing: 10px;
+    font-weight: bold;
+    background-color: white;
+    height: 100%;
+    border-left: 3px solid black;
+    
+}
+
+#left-side {
+    display: flex;
+    position: fixed;
+}
+
+#right-side {
+    display: flex;
+    position: fixed;
+    right: 0;
+}
+
+table {
+    margin: -15px auto 0 auto;
+    border-collapse: collapse;
+    border: 3px solid black;
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    width: 50px;   
+}
+
+#explanation {
+    width: 80%;
+    margin: 0 auto;
+    color:#fff;
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+   
+}
+
+#explanation p {
+    margin: 20px 0;
+}
+
+
+input::-webkit-outer-spin-button,       /*Removes up and down arrow on the right side of an input*/
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

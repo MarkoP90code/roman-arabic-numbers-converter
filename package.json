@@ -1,0 +1,14 @@
+{
+  "name": "roman-numeral-converter",
+  "version": "1.0.0",
+  "description": "convert arabic numbers into roman",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Marko P",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
